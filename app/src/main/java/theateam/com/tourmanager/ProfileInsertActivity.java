@@ -201,7 +201,7 @@ public class ProfileInsertActivity extends AppCompatActivity {
 				status=profileDBSource.addProfile(profileModel);
 			}
 			Toast.makeText(ProfileInsertActivity.this,"Account Information \nStored Successfully.", Toast.LENGTH_SHORT).show();
-			Intent homeIntent=new Intent(this,ProfileHomeActivity.class);
+			Intent homeIntent=new Intent(this,LogInActivity.class);
 			startActivity(homeIntent);
 			ProfileInsertActivity.this.finish();
 		}

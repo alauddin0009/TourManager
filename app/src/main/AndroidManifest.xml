@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="theateam.com.tourmanager">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash_Screen"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileHomeActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventInsertActivity"
+            android:label="Insert Event" />
+        <activity
+            android:name=".ProfileInsertActivity"
+            android:label="Add Account" />
+        <activity
+            android:name=".EventHomeActivity"
+            android:label="Moments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileDetailsActivity"
+            android:theme="@style/AppTheme"
+            android:label="Profile"
+            />
+        <activity
+            android:name=".ViewMomentActivity"
+            android:label="My Moment" />
+        <activity
+            android:name=".MomentInsertActivity"
+            android:theme="@style/AppTheme"
+            android:label="Add Moment"
+            />
+        <activity
+            android:name=".ExpenseListActivity"
+            android:label="All Expenses" />
+        <activity
+            android:name=".ExpenseInsertActivity"
+            android:label="Add Expense" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA3HZEApDtszKZOGTjPFJRrg6oPDal4m0I" />
+
+        <activity
+            android:name=".mainClassAndMap.MapsActivity"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mainClassAndMap.MainActivity"
+            android:label="main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".GeoData.FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Weather.MyWeather"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".LogInActivity"></activity>
+    </application>
+
+</manifest>

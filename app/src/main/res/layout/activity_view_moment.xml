@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMomentActivity"
+	android:orientation="vertical"
+	android:padding="10dp">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		android:id="@+id/setMyImage"
+		>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#ffffff">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp">
+
+			<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/momentNameLinear">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text=":"
+					android:id="@+id/textView24"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+                    android:id="@+id/momentNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moment Name"
+					android:layout_marginLeft="10dp"
+					android:textColor="#000000"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+            </LinearLayout>
+
+			<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/momentDescriptionLinear"
+                android:layout_below="@id/momentNameLinear">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text=":"
+					android:id="@+id/textView25"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+                    android:id="@+id/momentDescriptionView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moment Des"
+					android:layout_marginLeft="10dp"
+					android:textColor="#000000"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+            </LinearLayout>
+
+			<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/momentTimeLinear"
+                android:layout_below="@id/momentDescriptionLinear">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Moment"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text=":"
+					android:id="@+id/textView26"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+
+				<TextView
+                    android:id="@+id/momentTimeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moment time"
+					android:layout_marginLeft="10dp"
+					android:textColor="#000000"
+					android:textSize="18sp"
+					android:textIsSelectable="true" />
+            </LinearLayout>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/momentImageView"
+				android:adjustViewBounds="true"
+                android:layout_below="@id/momentTimeLinear"/>
+		</LinearLayout>
+
+
+
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

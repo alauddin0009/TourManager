@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/weather"
+            android:title="Weather" />
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/place"
+            android:title="Nearby" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/account"
+            android:title="My Account" />
+       <!-- <item
+            android:id="@+id/nav_edit_account"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Edit Account" />-->
+
+    </group>
+
+</menu>

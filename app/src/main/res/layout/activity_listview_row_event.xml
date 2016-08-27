@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <TextView
+	        android:id="@+id/eventHedingTVinList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Title"
+            android:textColor="#102286"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:padding="0dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:id="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/placeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="placename"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="From "
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:id="@+id/textView10"
+            android:padding="0dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:id="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/eventStartTVinList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10-12-2000"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:padding="0dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:id="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/eventEndTVinList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-12-2000"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Budget "
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:padding="0dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/budgetheading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=":"
+            android:id="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/eventBudgetTVinList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000 $"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

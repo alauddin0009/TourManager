@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="theateam.com.tourmanager.ProfileInsertActivity"
+	>
+
+
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:fillViewport="true"
+		android:background="@drawable/bg_3_1"
+		>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left|center_vertical|right">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="theateam.com.tourmanager.EventInsertActivity">
+
+	<ImageView
+		android:src="@drawable/app_logo"
+		android:layout_width="wrap_content"
+		android:layout_height="72dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/applogo"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/insertDetailLebel"
+		android:layout_below="@+id/applogo"
+		android:text="Please Enter Event Details Below"
+		android:layout_marginTop="10dp"
+		android:padding="5dp"
+		android:textColor="#19c3c9"
+		android:textStyle="bold"
+		android:textSize="22sp"
+		android:layout_centerHorizontal="true"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:id="@+id/namePlaceLinear"
+		android:layout_marginTop="20dp"
+		android:layout_below="@+id/insertDetailLebel">
+
+		<EditText
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+			android:id="@+id/eventNameEntry"
+			android:hint="Event name"
+			android:layout_marginRight="5dp"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:background="#39ffffff"
+			android:textColorHint="#eaeaea"
+			android:textColor="#353535"/>
+
+		<AutoCompleteTextView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+			android:id="@+id/eventPlaceEntry"
+			android:hint="Place name"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:background="#39ffffff"
+			android:textColorHint="#eaeaea"
+			android:textColor="#353535"
+			android:layout_below="@id/eventNameEntry"/>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_below="@id/namePlaceLinear"
+		android:layout_marginTop="15dp"
+    	android:id="@+id/startLinear">
+
+	    <EditText
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+			android:layout_marginRight="5dp"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:background="#39ffffff"
+			android:textColorHint="#eaeaea"
+			android:textColor="#353535"
+			android:id="@+id/eventStartEntry"
+			android:clickable="false"
+			android:cursorVisible="false"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:hint="Select start date" />
+	    <Button
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+	        android:text="From"
+			android:textColor="#ffffff"
+			android:shadowColor="#a0000000"
+			android:background="#46000000"
+			android:padding="10dp"
+			android:id="@+id/btnChangeDate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_below="@id/startLinear"
+		android:layout_marginTop="15dp"
+    	android:id="@+id/endLinear">
+
+	    <EditText
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="40dp"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:layout_marginRight="5dp"
+			android:background="#39ffffff"
+			android:textColorHint="#eaeaea"
+			android:textColor="#353535"
+			android:id="@+id/eventEndEntry"
+			android:clickable="false"
+			android:cursorVisible="false"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:hint="Select end date"/>
+	    <Button
+	        android:id="@+id/btnChangeEndDate"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="40dp"
+			android:textColor="#ffffff"
+			android:shadowColor="#a0000000"
+			android:background="#46000000"
+			android:padding="10dp"
+	        android:text="To" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="250dp"
+		android:layout_height="40dp"
+		android:foregroundGravity="center"
+		android:layout_below="@+id/endLinear"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="15dp"
+		android:textSize="14sp"
+		android:padding="10dp"
+		android:background="#39ffffff"
+		android:textColorHint="#eaeaea"
+		android:textColor="#353535"
+		android:id="@+id/budgetEntry"
+		android:hint="Enter budget"
+		android:inputType="number"
+		/>
+	<Button
+        android:id="@+id/saveBtn"
+        android:text="save"
+        android:onClick="save"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="46dp"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:shadowColor="#a0000000"
+		android:background="#b40028ff"
+		android:layout_below="@+id/budgetEntry" />
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

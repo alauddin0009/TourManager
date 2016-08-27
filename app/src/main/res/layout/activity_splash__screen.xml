@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="theateam.com.tourmanager.Splash_Screen"
+    android:background="@drawable/bg_3_1"
+    android:layout_gravity=""
+    android:gravity="center_vertical|center_horizontal">
+    <ScrollView
+        android:layout_width="220dp"
+        android:layout_height="218dp"
+        android:background="@drawable/app_logo"
+        >
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
